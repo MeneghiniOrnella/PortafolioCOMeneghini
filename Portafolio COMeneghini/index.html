@@ -15,15 +15,14 @@
 </head>
 <body>
     <nav class="navbar">
-        <li>
-            <ul class="inicio"><a href="#inicio">Inicio</a></ul>
-            <ul class="cv"><a href="#cv">Curriculum</a></ul>
-            <ul class="proyectos"><a href="#proyectos">Proyectos</a></ul>
-            <ul class="contacto"><a href="#contacto">Contacto</a></ul>
+        <li class="barraNav">
+            <ul><a href="#inicio">Inicio</a></ul>
+            <ul><a href="#cv">Curriculum</a></ul>
+            <ul><a href="#proyectos">Proyectos</a></ul>
+            <ul><a href="#contacto">Contacto</a></ul>
+            <ul><p type="button" class="switchTheme" onclick="cambiarModo()"><i class="fas fa-adjust"></i></p></ul>
         </li>
     </nav>
-    <p type="button" class="switchTheme" onclick="cambiarModo()"><i class="fas fa-adjust"></i></p>
-
     <header class="inicio"><a name='inicio'></a>
         <h1>Hola, soy C. Ornella Meneghini y esta es mi página, te invito a recorrerla.</h1>
     </header>
@@ -44,37 +43,39 @@
                     </ol>
                 </li>
             </article>
+            <h3>Educación</h3>
             <article class="educación">
-                <h3>Educación</h3>
                 <li>
                     <ol><b>Licenciatura en Comercio Internacional</b><br>2020 - Actualidad	| Universidad de la Marina Mercante | 2 materias restantes</ol>
                     <ol><b>Técnica en Comercio Internacional</b><br>2017 - 2019 | Fundación ICBC</ol>
                     <ol><b>Bachiller con Orientación en Administración y Gestión de Empresas</b><br>2013 - 2015 | Instituto Formar Futuro</ol>
                 </li>
             </article>
-            <article class="programación">
-                <h3>Conocimientos en Programación</h3>
-                <li>
-                    
-                    <ol><img src="img\html5.svg" weight="75" height="75"><br><progress id="file" value="66.66" max="100"></progress><br></ol>
-                    <ol><img src="img\css3.svg"  weight="75" height="75"><br><progress id="file" value="66.66" max="100"></progress></ol>
-                    <ol><img src="img\js.svg"  weight="75" height="75"><br><progress id="file" value="33.33" max="100"></progress></ol>
-                    <ol><img src="img\python.svg"  weight="75" height="75"><br><progress id="file" value="33.33" max="100"></progress></ol>
-                    <ol><img src="img\mySQL.svg"  weight="75" height="75"><br><progress id="file" value="33.33" max="100"></progress></ol>
+            <h3>Conocimientos en Programación</h3>
+            <article >
+                <li class="programación">
+                    <ol><img src="img\html5.svg" weight="75" height="75"><br><progress id="file" value="66.66" max="100"></progress><br>HTML Intermedio</ol>
+                    <ol><img src="img\css3.svg"  weight="75" height="75"><br><progress id="file" value="66.66" max="100"></progress><br>CSS Intermedio</ol>
+                    <ol><img src="img\js.svg"  weight="75" height="75"><br><progress id="file" value="33.33" max="100"></progress><br>Javascript Básico</ol>
+                    <ol><img src="img\python.svg"  weight="75" height="75"><br><progress id="file" value="33.33" max="100"></progress><br>Python Básico</ol>
+                    <ol><img src="img\mySQL.svg"  weight="75" height="75"><br><progress id="file" value="33.33" max="100"></progress><br>My SQL Básico</ol>
                 </li>
             </article>
-            <article class="otros">
-                <h3>Otros Conocimientos</h3>
-                <li>
-                    <ol><img src="img\uk.svg"  weight="75" height="75"><br><progress id="file" value="100" max="100"></progress></ol>
-                    <ol><img src="img\brazil.svg"  weight="75" height="75"><br><progress id="file" value="33.33" max="100"></progress></ol>
-                    <ol><img src="img\word.svg"  weight="75" height="75"><br><progress id="file" value="100" max="100"></progress></ol>
-                    <ol><img src="img\excel.svg"  weight="75" height="75"><br><progress id="file" value="100" max="100"></progress></ol>
-                    <ol><img src="img\ppt.svg"  weight="75" height="75"><br><progress id="file" value="100" max="100"></progress></ol>
-                    <ol><img src="img\mySQL.svg"  weight="75" height="75"><br>Marketing Digital <progress id="file" value="66.66" max="100"></progress></ol>
-                    <ol><img src="img\mySQL.svg"  weight="75" height="75"><br>Licencia de conducir B1 <progress id="file" value="100" max="100"></progress></ol>
-                    <ol><img src="img\bootstrap.svg"  weight="75" height="75"><br>Bootstrap 5 <progress id="file" value="66.66" max="100"></progress></ol>
-                    <ol><img src="img\mySQL.svg"  weight="75" height="75"><br>JQuery <progress id="file" value="33.33" max="100"></progress></ol>
+            <h3>Otros Conocimientos</h3>
+            <div class="progress">
+                <div class="bar shadow overlap"></div>
+            </div>
+            <article>
+                <li class="otros">
+                    <ol><img src="img\uk.svg" weight="75" height="75"><br><progress id="file" value="100" max="100"></progress><br>Inglés Avanzado</ol>
+                    <ol><img src="img\brazil.svg" weight="75" height="75"><br><progress id="file" value="33.33" max="100"></progress><br>Portugués Básico</ol>
+                    <ol><img src="img\word.svg" weight="75" height="75"><br><progress id="file" value="100" max="100"></progress><br>Microsoft Office Word Avanzado</ol>
+                    <ol><img src="img\excel.svg" weight="75" height="75"><br><progress id="file" value="100" max="100"></progress><br>Microsoft Office Excel Avanzado</ol>
+                    <ol><img src="img\ppt.svg" weight="75" height="75"><br><progress id="file" value="100" max="100"></progress><br>Microsoft Office Power Point Avanzado</ol>
+                    <ol><img src="img\mySQL.svg" weight="75" height="75"><br><progress id="file" value="66.66" max="100"></progress><br>Marketing Digital Intermedio</ol>
+                    <ol><img src="img\mySQL.svg" weight="75" height="75"><br><progress id="file" value="100" max="100"></progress><br>Licencia de conducir B1</ol>
+                    <ol><img src="img\bootstrap.svg" weight="75" height="75"><br><progress id="file" value="66.66" max="100"></progress><br>Bootstrap 5 Básico</ol>
+                    <ol><img src="img\mySQL.svg" weight="75" height="75"><br><progress id="file" value="33.33" max="100"></progress><br>JQuery Básico</ol>
                 </li>
             </article>
         </section>
@@ -128,11 +129,24 @@
     <br>
     <footer class="footer">
         <div>
+            <h4>Página creada por C. Ornella Meneghini</h4>
+        </div>
+        <div>
+            <h4>Menú</h4>
             <li>
-                <ul class="footerIcon"><i class="fas fa-envelope"></i></ul>
-                <ul class="footerIcon"><i class="fab fa-linkedin"></i></ul>
-                <ul class="footerIcon"><i class="fab fa-whatsapp"></i></ul>
-                <ul class="footerIcon"><i class="fab fa-telegram"></i></ul>
+                <ul><a href="#inicio">Inicio</a></ul>
+                <ul><a href="#cv">Curriculum</a></ul>
+                <ul><a href="#proyectos">Proyectos</a></ul>
+                <ul><a href="#contacto">Contacto</a></ul>
+            </li>
+        </div>
+        <div>
+            <h4>Contacto</h4>
+            <li>
+                <ul class="footerIcon"><a href="mailto:meneghini.ornella@gmail.com"></a></a><i class="fas fa-envelope"></i></ul>
+                <ul class="footerIcon"><a href="https://www.linkedin.com/in/ornella-meneghini/"></a><i class="fab fa-linkedin"></i></ul>
+                <ul class="footerIcon"><a href="tel:+54 1123259370"></a></a><i class="fab fa-whatsapp"></i></ul>
+                <ul class="footerIcon"><a href="https://t.me/orne96"></a><i class="fab fa-telegram"></i></ul>
             </li>
         </div>
     </footer>
