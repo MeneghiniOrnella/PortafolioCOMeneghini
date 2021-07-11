@@ -1,3 +1,4 @@
+/*
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -5,44 +6,51 @@
     margin: 0;
     padding: 0;
     justify-content: center;
-}
+}*/
 
 body{
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(248, 248, 248);
-    flex-wrap: wrap;
 }
 
-h1,h2,h3,h4{
-    margin: 0;
+/* Texto */
+h2,h3{
+    margin-left: 2em;
     padding: 0;
     display: flex;
     text-decoration: solid;
     text-align: center;
-    color: rgb(4, 66, 136);
+    color: rgb(8, 36, 128);
 }
-
+h1{
+    text-align: center;
+    text-decoration:wavy;
+    color: black;
+    background: #FEAC5E;
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+}
+h2{
+    text-transform: uppercase;
+}
 p{
     text-align: justify;
     margin: 2rem;
 }
-
 a:link, a:visited, a:active, a:hover {
     text-decoration:none;
+}
+li{
+    list-style: none;
 }
 
 section{
     background-color: rgb(255, 255, 255);
 }
 
-li{
-    list-style: none;
-}
-
-
-/* header & footer */
-nav, footer, nav a, footer a, nav p{
+/* footer */
+footer, footer a{
     display: flex;
     text-decoration: none;
     overflow: hidden;
@@ -51,18 +59,13 @@ nav, footer, nav a, footer a, nav p{
     margin:0;
     padding: 0;
 }
-nav a, nav p{
-    padding: 10px 14px;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 10%;
-}
-nav a:hover, footer a:hover, nav p:hover{
+footer a:hover{
     text-decoration: none;
     overflow: hidden;
-    background: rgb(1,2,82);
-    background: linear-gradient(0deg, rgba(1,2,82,1) 0%, rgba(34,193,195,1) 100%); 
-    color: rgb(255, 255, 255);
+    border-radius: 0%;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(130, 189, 238);
+    color: rgb(22, 32, 63);
 }
 footer{
     display: flex;
@@ -79,6 +82,7 @@ footer > a{
     border-radius:100%;
 }
 
+/* Progress Bar */
 progress{
     background-color: rgb(209, 208, 208);
 }
@@ -111,23 +115,19 @@ progress[value]::-moz-progress-bar {
     border-radius: 2px; 
     background-size: 35px 20px, 100% 100%, 100% 100%; 
 }
-h1{
-    background: #FEAC5E;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+
 
 
 /* Modo Oscuro */
 .oscuro{ 
-    background-color: #021c4e; 
+    background-color: #1a2c4e; 
     color: #f3f0f0; 
 }
 .oscuro section{
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(58, 69, 92);
 }
 .oscuro h2, .oscuro h3, .oscuro h4{
-    color: #04c7d4;
+    color: #31bfc9;
 }
 .oscuro p{
     color: #ffffff;
@@ -136,52 +136,36 @@ h1{
 
 /* Responsive Design */
 @media only screen and (max-width: 600px) {
-
+    .programación{
+        display: grid;
+        text-align: center;
+        width: 100%;
+        grid-template-columns: auto;
+        padding: 0.1em 0 0.1em;
+    }
     
 }
 
 @media only screen and (min-width: 601px) and (max-width: 800px) {
-    nav{
-        text-align: right;
-        justify-content: right;
-    }
     body{
         text-align: center;
         align-content: center;
     }
     .programación{
         display: grid;
-            grid-auto-flow: column;
-            text-align: center;
-            width: 100%;
-    }
-    .otros{
-        display: inline-grid;
-        grid-template-columns: auto auto auto;
         text-align: center;
-        padding: 10px;
         width: 100%;
+        grid-template-columns: auto auto auto;
+        padding: 0.1em 0 0.1em;
     }
 }
 
 @media only screen and (min-width: 801px) {
-    .barraNav{
-        display: grid;
-        grid-auto-flow: column;
-        text-align: center;
-        width: 100%;
-    }
     .programación{
         display: grid;
-            grid-auto-flow: column;
-            text-align: center;
-            width: 100%;
-    }
-    .otros{
-        display: inline-grid;
-        grid-template-columns: auto auto auto;
         text-align: center;
-        padding: 10px;
         width: 100%;
+        grid-template-columns: auto auto auto auto;
+        padding: 0.1em 0 0.1em;
     }
 }
