@@ -7,26 +7,72 @@
     <title>COMeneghini</title>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/093473ac19.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\style.css"
 </head>
 <body>
-    <nav class="navbar">
-        <li class="barraNav">
-            <ul><a href="#inicio">Inicio</a></ul>
-            <ul><a href="#cv">Curriculum</a></ul>
-            <ul><a href="#proyectos">Proyectos</a></ul>
-            <ul><a href="#contacto">Contacto</a></ul>
-            <ul><p type="button" class="switchTheme" onclick="cambiarModo()"><i class="fas fa-adjust"></i></p></ul>
-        </li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Ornellla Meneghini</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#inicio" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#cv" href="#">Curriculum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#proyectos" href="#">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#contacto" href="#">Contacto</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <p type="button" class="switchTheme" onclick="cambiarModo()"> <i class="fas fa-adjust"></i> </p>
+                </li>
+                <li class="nav-item">
+                    <a href="indexEN.html"><img src="img\uk.jpg" weigth="10" height="20"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" href="#contacto"></<a href="indexBR.html"><img src="img\brasil.jpg" weigth="10" height="20"></a>
+                </li>
+              </ul>
+            </span>
+          </div>
+        </div>
     </nav>
-    <header class="inicio"><a name='inicio'></a>
-        <h1>Hola, soy C. Ornella Meneghini y esta es mi página, te invito a recorrerla.</h1>
-    </header>
+    <!--
+                <!-- https://icons.coreui.io/icons/flag/br/ -->
+                <!--  <i class="cif-us"></i>  -->
+                <!--<ul></ul>
+                <!--  <i class="cif-br"></i> <i class="cif-ar"></i> -->
+    <div class="inicio"><a name='inicio'></a>
+        <div class="text-content">
+            <div class="text">Soy, Mi nombre es</div>
+            <div class="name">C. Ornella Meneghini</div>
+            <div class="job">
+            <div class="job">
+                <span>Y soy</span>
+                <div class="typing-text">
+                    <span class="one">Técnica en comercio internacional,</span>
+                    <span class="two">Desarrolladora</span>
+                </div>
+            </div>        
+    <div class="buttons">
+        <img src="img\dev.jpg" weigth="200" height="400">
+    </div>
         <section class="cv"><a name='cv'></a>
+            <h2>Curriculum</h2>
             <article class="experiencia">
                 <h3>Experiencia Laboral</h3>
                 <li>
@@ -36,7 +82,7 @@
                             <ol>Soporte técnico de software en las computadoras de la Institución de Nivel Inicial</ol>
                         </li>
                     </ol>
-                    <ol><b>Vendedora Ecommerce</b><br>2018 - 2019
+                    <ol><b>Vendedora Ecommerce</b><br>2018 - 2019<br>
                         <li>
                             <ol>Venta de artículos tecnológicos en Mercado Libre</ol>
                         </li>
@@ -51,56 +97,59 @@
                     <ol><b>Bachiller con Orientación en Administración y Gestión de Empresas</b><br>2013 - 2015 | Instituto Formar Futuro</ol>
                 </li>
             </article>
-            <h3>Conocimientos en Programación</h3>
+            <h3>Habilidades</h3>
             <article >
                 <li class="programación">
-                    <ol><img src="img\html5.svg" weight="75" height="75"><br><progress id="file" value="66.66" max="100"></progress><br>HTML Intermedio</ol>
-                    <ol><img src="img\css3.svg"  weight="75" height="75"><br><progress id="file" value="66.66" max="100"></progress><br>CSS Intermedio</ol>
-                    <ol><img src="img\js.svg"  weight="75" height="75"><br><progress id="file" value="33.33" max="100"></progress><br>Javascript Básico</ol>
-                    <ol><img src="img\python.svg"  weight="75" height="75"><br><progress id="file" value="33.33" max="100"></progress><br>Python Básico</ol>
-                    <ol><img src="img\mySQL.svg"  weight="75" height="75"><br><progress id="file" value="33.33" max="100"></progress><br>My SQL Básico</ol>
-                </li>
-            </article>
-            <h3>Otros Conocimientos</h3>
-            <div class="progress">
-                <div class="bar shadow overlap"></div>
-            </div>
-            <article>
-                <li class="otros">
-                    <ol><img src="img\uk.svg" weight="75" height="75"><br><progress id="file" value="100" max="100"></progress><br>Inglés Avanzado</ol>
-                    <ol><img src="img\brazil.svg" weight="75" height="75"><br><progress id="file" value="33.33" max="100"></progress><br>Portugués Básico</ol>
-                    <ol><img src="img\word.svg" weight="75" height="75"><br><progress id="file" value="100" max="100"></progress><br>Microsoft Office Word Avanzado</ol>
-                    <ol><img src="img\excel.svg" weight="75" height="75"><br><progress id="file" value="100" max="100"></progress><br>Microsoft Office Excel Avanzado</ol>
-                    <ol><img src="img\ppt.svg" weight="75" height="75"><br><progress id="file" value="100" max="100"></progress><br>Microsoft Office Power Point Avanzado</ol>
-                    <ol><img src="img\mySQL.svg" weight="75" height="75"><br><progress id="file" value="66.66" max="100"></progress><br>Marketing Digital Intermedio</ol>
-                    <ol><img src="img\mySQL.svg" weight="75" height="75"><br><progress id="file" value="100" max="100"></progress><br>Licencia de conducir B1</ol>
-                    <ol><img src="img\bootstrap.svg" weight="75" height="75"><br><progress id="file" value="66.66" max="100"></progress><br>Bootstrap 5 Básico</ol>
-                    <ol><img src="img\mySQL.svg" weight="75" height="75"><br><progress id="file" value="33.33" max="100"></progress><br>JQuery Básico</ol>
+                    <ol id="Avanzado" class="red"><i class="fas fa-flag fa-5x"></i><br><progress id="file" value="100" max="100" title="Avanzado"></progress><br>Inglés</ol>
+                    <ol id="Basico" class="yellow"><i class="fas fa-flag fa-5x"></i><br><progress id="file" value="33.33" max="100" title="Básico"></progress><br>Portugués</ol>
+                    <ol id="Avanzado" class="blue"><i class="fas fa-file-word fa-5x"></i><br><progress id="file" value="100" max="100" title="Avanzado"></progress><br>Microsoft Office Word</ol>
+                    <ol id="Avanzado" class="green"><i class="fas fa-file-excel fa-5x"></i><br><progress id="file" value="100" max="100" title="Avanzado"></progress><br>Microsoft Office Excel</ol>
+                    <ol id="Avanzado" class="orange"><i class="fas fa-file-powerpoint fa-5x"></i><br><progress id="file" value="100" max="100" title="Avanzado"></progress><br>Microsoft Office Power Point</ol>
+                    <ol id="Intermedio" class="green"><i class="fas fa-poll fa-5x"></i><br><progress id="file" value="66.66" max="100" title="Intermedio"></progress><br>Marketing Digital</ol>
+                    <ol class="purple"><i class="fas fa-car fa-5x"></i><br><progress id="file" value="100" max="100"></progress><br>Licencia de conducir B1</ol>
+                    <ol id="Intermedio" class="orange"><i class="fab fa-html5 fa-5x"></i><br><progress id="file" value="66.66" max="100" title="Intermedio"></progress><br>HTML <p onmousemove="nivel()"></p></ol>
+                    <ol id="Intermedio" class="blue"><i class="fab fa-css3-alt fa-5x"></i><br><progress id="file" value="66.66" max="100" title="Intermedio"></progress><br>CSS</ol>
+                    <ol id="Basico" class="yellow"><i class="fab fa-js-square fa-5x"></i><br><progress id="file" value="33.33" max="100" title="Básico"></progress><br>Javascript</ol>
+                    <ol id="Basico" class="blue"><i class="fab fa-python fa-5x"></i><br><progress id="file" value="33.33" max="100" title="Básico"></progress><br>Python</ol>
+                    <ol id="Basico" class="blue"><i class="fas fa-database fa-5x"></i><br><progress id="file" value="33.33" max="100" title="Básico"></progress><br>My SQL</ol>
+                    <ol id="Basico" class="purple"><i class="fab fa-bootstrap fa-5x"></i><br><progress id="file" value="66.66" max="100" title="Básico"></progress><br>Bootstrap 5</ol>
+                    <ol id="Basico" class="green"><i class="fas fa-flask fa-5x"></i><br><progress id="file" value="33.33" max="100" title="Básico"></progress><br>Flask</ol>
                 </li>
             </article>
         </section>
         <br>
         <section class="proyectos"><a name='proyectos'></a>
-            <h3>Mis Proyectos</h3>
+            <h2>Mis Proyectos</h2>
             <article class="Proyecto1">
-                <h4>Convertirse en artista con Javascript</h4>
-                <p>HTML 5 | Javascript</p>
-                <p>Permite definir cantidad de lineas que formaran el dibujo.</p>
+                <h3>Mascotas</h3>
+                <img src="img\Página.en.desarrollo.gif" width="800">
+                <p>HTML 5 | Python 3 | MySQL | CSS 3 | Bootstrap | Flask</p>
+                <p>Página de base de datos con formato de tabla para uso veterianrio para ver fichas de pacientes, permitiendo agregar nuevos, editarlos y eliminarlos. Página presentada como TP integrador grupal del Curso Fullstack Python Codo a Codo del gob. de CABA.</p>
             </article>
+            
             <article class="Proyecto1">
-                <h4>.CommerceOrnellaMeneghini</h4>
+                <h3>.CommerceOrnellaMeneghini</h3>
+                <img src="img\Página.en.desarrollo.gif" width="800">
                 <p>HTML 5 | CSS 3</p>
-                <p>Página presentada como TP del Curso Codo a Codo del gob. de CABA. Basada en mis conocimientos en el comercio internacional y la programación.</p>
+                <p>Página presentada como TP del Curso Fullstack Python Codo a Codo del gob. de CABA. Basada en mis conocimientos en el comercio internacional y la programación.</p>
             </article>
             <article class="Proyecto1">
-                <h4>GameDo</h4>
+                <h3>GameDo</h3>
+                <img src="img\Página.en.desarrollo.gif" width="800">
                 <p>HTML 5 | CSS 3 | Javascript</p>
                 <p>Juego de preguntas y respuestas creado para una escuela de Taekwondo, con el objetivo que los alumnos repasen y aprendan teoría.</p>
             </article>
             <article class="Proyecto1">
-                <h4>Mi portafolio</h4>
+                <h3>Mi portafolio</h3>
+                <img src="img\Página.en.desarrollo.gif">
                 <p>HTML 5 | CSS 3 | Javascript</p>
                 <p>Esta página fue creada con el objetivo de atraer reclutadores y clientes.</p>
+            </article>
+            <article class="Proyecto1">
+                <h3>Convertirse en artista con Javascript</h3>
+                <img src="img\Página.en.desarrollo.gif" width="800">
+                <p>HTML 5 | Javascript</p>
+                <p>Permite definir cantidad de lineas que formaran el dibujo.</p>
             </article>
         </section>
         <br>
@@ -112,11 +161,11 @@
                 <div class="col-md-6 mt-3 mt-md-0 ">
                    <div class="mb-3 ">
                       <label for="exampleFormControlInput1 " class="form-label ">Nombre</label>
-                      <input type="text " class="form-control " id="exampleFormControlInput1 " placeholder="tu nombre ">
+                      <input type="text " class="form-control " id="exampleFormControlInput1 " placeholder="Nombre">
                    </div>
                    <div class="mb-3 ">
                       <label for="exampleFormControlInput1 " class="form-label ">Correo electronico</label>
-                      <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder="name@example.com ">
+                      <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder="nombre@mail.com ">
                    </div>
                    <div class="mb-3 ">
                       <label for="exampleFormControlTextarea1 " class="form-label ">comentario</label>
@@ -127,12 +176,11 @@
                    </div>
         </section>
     <br>
-    <footer class="footer">
+    <!--<footer class="footer">
         <div>
-            <h4>Página creada por C. Ornella Meneghini</h4>
+            <h4></h4>
         </div>
         <div>
-            <h4>Menú</h4>
             <li>
                 <ul><a href="#inicio">Inicio</a></ul>
                 <ul><a href="#cv">Curriculum</a></ul>
@@ -143,15 +191,44 @@
         <div>
             <h4>Contacto</h4>
             <li>
-                <ul class="footerIcon"><a href="mailto:meneghini.ornella@gmail.com"></a></a><i class="fas fa-envelope"></i></ul>
-                <ul class="footerIcon"><a href="https://www.linkedin.com/in/ornella-meneghini/"></a><i class="fab fa-linkedin"></i></ul>
-                <ul class="footerIcon"><a href="tel:+54 1123259370"></a></a><i class="fab fa-whatsapp"></i></ul>
-                <ul class="footerIcon"><a href="https://t.me/orne96"></a><i class="fab fa-telegram"></i></ul>
+                <ul class="footerIcon"><a href="mailto:meneghini.ornella@gmail.com"><i class="fas fa-envelope"></i></a></ul>
+                <ul class="footerIcon"><a href="https://www.linkedin.com/in/ornella-meneghini/"><i class="fab fa-linkedin"></i></a></ul>
+                <ul class="footerIcon"><a href="tel:+54 1123259370"><i class="fab fa-whatsapp"></i></a></ul>
+                <ul class="footerIcon"><a href="https://t.me/orne96"><i class="fab fa-telegram"></i></a></ul>
             </li>
-        </div>
-    </footer>
-
+        </div>-->
+        <footer>
+            <div class="content">
+              <div class="left box">
+                <div class="topic">Menú</div>
+                <div>
+                    <li>
+                        <ul><a href="#inicio">Inicio</a></ul>
+                        <ul><a href="#cv">Curriculum</a></ul>
+                        <ul><a href="#proyectos">Proyectos</a></ul>
+                        <ul><a href="#contacto">Contacto</a></ul>
+                    </li>
+              </div>
+              <div class="right box">
+                <div class="topic">Contacto</div>
+                    <div class="media-icons">
+                        <li>
+                            <ul class="footerIcon"><a href="mailto:meneghini.ornella@gmail.com"><i class="fas fa-envelope"></i></a></ul>
+                            <ul class="footerIcon"><a href="https://www.linkedin.com/in/ornella-meneghini/"><i class="fab fa-linkedin"></i></a></ul>
+                            <ul class="footerIcon"><a href="tel:+54 1123259370"><i class="fab fa-whatsapp"></i></a></ul>
+                            <ul class="footerIcon"><a href="https://t.me/orne96"><i class="fab fa-telegram"></i></a></ul>
+                        </li>
+                    </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <p>Página creada por C. Ornella Meneghini</p>
+            </div>
+        </footer>
+    <!--<a href='https://www.freepik.es/vectores/trabajo'>Vector de Trabajo creado por stories - www.freepik.es</a>-->
     <!-- JS -->
-    <script src="js\index.js"></script>
+    <script src="js/index.js"></script>    
+    <!-- Bootstrap --> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
