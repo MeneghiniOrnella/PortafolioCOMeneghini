@@ -1,13 +1,9 @@
-/*
+
 * {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     margin: 0;
     padding: 0;
     justify-content: center;
-}*/
-
+}
 body{
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -45,11 +41,10 @@ li{
     list-style: none;
 }
 
+/* Secciones */
 section{
     background-color: rgb(255, 255, 255);
 }
-
-/* footer */
 footer, footer a{
     display: flex;
     text-decoration: none;
@@ -82,6 +77,26 @@ footer > a{
     border-radius:100%;
 }
 
+/* Inicio */
+.text-content .typing-text{
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #1de2d1;
+    animation: typing 5s steps(15) infinite;
+  }
+  @keyframes typing{
+    0%{
+      width: 0ch;
+    }
+    50%{
+      width: 15ch;
+    }
+    100%{
+      width: 0ch;
+    }
+  }
+
 /* Progress Bar */
 progress{
     background-color: rgb(209, 208, 208);
@@ -111,12 +126,40 @@ progress[value]::-moz-progress-bar {
         #22c1c3, 
         #010252
       );
-  
     border-radius: 2px; 
     background-size: 35px 20px, 100% 100%, 100% 100%; 
 }
 
+.programación{
+    display: grid;
+    text-align: center;
+    width: 100%;
+}
 
+.programación img, .Proyecto1 img{
+    width: 40%;
+    height:40%;
+}
+
+/* Skills */
+fa-li .red{
+    color: rgb(202, 9, 9);
+}
+fa-li .orange{
+    color: rgb(255, 157, 0);
+}
+fa-li .blue{
+    color: rgb(0, 91, 209);
+}
+fa-li .green{
+    color: rgb(35, 160, 23);
+}
+fa-li .purple{
+    color: rgb(111, 48, 175);
+}
+fa-li .yellow{
+    color: rgb(255, 239, 19);
+}
 
 /* Modo Oscuro */
 .oscuro{ 
@@ -133,19 +176,16 @@ progress[value]::-moz-progress-bar {
     color: #ffffff;
 }
 
-
 /* Responsive Design */
 @media only screen and (max-width: 600px) {
-    .programación{
-        display: grid;
+    body{
         text-align: center;
-        width: 100%;
-        grid-template-columns: auto;
-        padding: 0.1em 0 0.1em;
+        align-content: center;
     }
-    
+    .programación{
+        grid-template-columns: auto;
+    }   
 }
-
 @media only screen and (min-width: 601px) and (max-width: 800px) {
     body{
         text-align: center;
@@ -156,15 +196,11 @@ progress[value]::-moz-progress-bar {
         text-align: center;
         width: 100%;
         grid-template-columns: auto auto auto;
-        padding: 0.1em 0 0.1em;
+        padding: 0.05em 0 0.05em;
     }
 }
-
 @media only screen and (min-width: 801px) {
     .programación{
-        display: grid;
-        text-align: center;
-        width: 100%;
         grid-template-columns: auto auto auto auto;
         padding: 0.1em 0 0.1em;
     }
