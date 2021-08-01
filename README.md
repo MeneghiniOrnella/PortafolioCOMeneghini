@@ -14,6 +14,6 @@ Página web para mi curriculum y proyectos a reclutadores, desarrolladores y tod
 - HTML
 - CSS
 - JS
-- Bootstrap: framework de CSS y JS.
+- Bootstrap.
 ## Autora:
 - Cecilia Ornella Meneghini: Desarrolladora Web y Técnica en Comercio Internacional.

@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/093473ac19.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="css\style.css"
+    <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -40,22 +40,34 @@
                 <li class="nav-item">
                     <p type="button" class="switchTheme" onclick="cambiarModo()"> <i class="fas fa-adjust"></i> </p>
                 </li>
-                <li class="nav-item">
-                    <a href="indexEN.html"><img src="img\uk.jpg" weigth="10" height="20"></a>
+                <!-- <li class="nav-item">
+                    <a href="indexEN.html"><img src="img\united-kingdom.svg" width="35"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" href="#contacto"></<a href="indexBR.html"><img src="img\brasil.jpg" weigth="10" height="20"></a>
+                    <a </a>
                 </li>
-              </ul>
+                <li class="nav-item">
+                    
+                </li>
+              </ul> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="index.html"><img src="img\argentina.svg" width="35">
+                        <a class="dropdown-item" href="indexBR.html"><img src="img\brazil.svg" width="35"></a>
+                    </div>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
             </span>
           </div>
         </div>
     </nav>
-    <!--
-                <!-- https://icons.coreui.io/icons/flag/br/ -->
-                <!--  <i class="cif-us"></i>  -->
-                <!--<ul></ul>
-                <!--  <i class="cif-br"></i> <i class="cif-ar"></i> -->
     <div class="inicio"><a name='inicio'></a>
         <div class="text-content">
             <div class="text">Soy, Mi nombre es</div>
@@ -107,7 +119,7 @@
                     <ol id="Avanzado" class="orange"><i class="fas fa-file-powerpoint fa-5x"></i><br><progress id="file" value="100" max="100" title="Avanzado"></progress><br>Microsoft Office Power Point</ol>
                     <ol id="Intermedio" class="green"><i class="fas fa-poll fa-5x"></i><br><progress id="file" value="66.66" max="100" title="Intermedio"></progress><br>Marketing Digital</ol>
                     <ol class="purple"><i class="fas fa-car fa-5x"></i><br><progress id="file" value="100" max="100"></progress><br>Licencia de conducir B1</ol>
-                    <ol id="Intermedio" class="orange"><i class="fab fa-html5 fa-5x"></i><br><progress id="file" value="66.66" max="100" title="Intermedio"></progress><br>HTML <p onmousemove="nivel()"></p></ol>
+                    <ol id="Intermedio" class="orange"><i class="fab fa-html5 fa-5x"></i><br><progress id="file" value="66.66" max="100" title="Intermedio"></progress><br>HTML</ol>
                     <ol id="Intermedio" class="blue"><i class="fab fa-css3-alt fa-5x"></i><br><progress id="file" value="66.66" max="100" title="Intermedio"></progress><br>CSS</ol>
                     <ol id="Basico" class="yellow"><i class="fab fa-js-square fa-5x"></i><br><progress id="file" value="33.33" max="100" title="Básico"></progress><br>Javascript</ol>
                     <ol id="Basico" class="blue"><i class="fab fa-python fa-5x"></i><br><progress id="file" value="33.33" max="100" title="Básico"></progress><br>Python</ol>
@@ -120,39 +132,48 @@
         <br>
         <section class="proyectos"><a name='proyectos'></a>
             <h2>Mis Proyectos</h2>
-            <article class="Proyecto1">
                 <h3>Mascotas</h3>
-                <img src="img\Página.en.desarrollo.gif" width="800">
-                <p>HTML 5 | Python 3 | MySQL | CSS 3 | Bootstrap | Flask</p>
-                <p>Página de base de datos con formato de tabla para uso veterianrio para ver fichas de pacientes, permitiendo agregar nuevos, editarlos y eliminarlos. Página presentada como TP integrador grupal del Curso Fullstack Python Codo a Codo del gob. de CABA.</p>
-            </article>
-            
-            <article class="Proyecto1">
+                <article class="Proyecto1">
+                    <img src="img\Página.en.desarrollo.gif" width="500" class="uno">
+                    <div class="dos">
+                        <p>HTML 5 | Python 3 | MySQL | CSS 3 | Bootstrap | Flask</p>
+                        <p>Página de base de datos con formato de tabla para uso veterianrio para ver fichas de pacientes, permitiendo agregar nuevos, editarlos y eliminarlos. Página presentada como TP integrador grupal del Curso Fullstack Python Codo a Codo del gob. de CABA.</p>
+                    </div>
+                </article>
                 <h3>.CommerceOrnellaMeneghini</h3>
-                <img src="img\Página.en.desarrollo.gif" width="800">
-                <p>HTML 5 | CSS 3</p>
-                <p>Página presentada como TP del Curso Fullstack Python Codo a Codo del gob. de CABA. Basada en mis conocimientos en el comercio internacional y la programación.</p>
-            </article>
-            <article class="Proyecto1">
+                <article class="Proyecto1">
+                    <img src="img\Página.en.desarrollo.gif" width="500" class="uno">
+                    <div class="dos">
+                        <p>HTML 5 | CSS 3</p>
+                        <p>Página presentada como TP del Curso Fullstack Python Codo a Codo del gob. de CABA. Basada en mis conocimientos en el comercio internacional y la programación.</p>
+                    </div>
+                </article>
                 <h3>GameDo</h3>
-                <img src="img\Página.en.desarrollo.gif" width="800">
-                <p>HTML 5 | CSS 3 | Javascript</p>
-                <p>Juego de preguntas y respuestas creado para una escuela de Taekwondo, con el objetivo que los alumnos repasen y aprendan teoría.</p>
-            </article>
-            <article class="Proyecto1">
+                <article class="Proyecto1">
+                    <img src="img\Página.en.desarrollo.gif" width="500" class="uno">
+                    <div class="dos">
+                    <p>HTML 5 | CSS 3 | Javascript</p>
+                    <p>Juego de preguntas y respuestas creado para una escuela de Taekwondo, con el objetivo que los alumnos repasen y aprendan teoría.</p>
+                    </div>
+                </article>
                 <h3>Mi portafolio</h3>
-                <img src="img\Página.en.desarrollo.gif">
-                <p>HTML 5 | CSS 3 | Javascript</p>
-                <p>Esta página fue creada con el objetivo de atraer reclutadores y clientes.</p>
-            </article>
+                <article class="Proyecto1">
+                    <img src="img\Página.en.desarrollo.gif" width="500" class="uno">
+                    <div class="dos">
+                        <p>HTML 5 | CSS 3 | Javascript</p>
+                        <p>Esta página fue creada con el objetivo de atraer reclutadores y clientes.</p>
+                    </div>
+                </article>
             <article class="Proyecto1">
                 <h3>Convertirse en artista con Javascript</h3>
-                <img src="img\Página.en.desarrollo.gif" width="800">
-                <p>HTML 5 | Javascript</p>
-                <p>Permite definir cantidad de lineas que formaran el dibujo.</p>
+                <img src="img\Página.en.desarrollo.gif" width="500" class="uno">
+                <div class="dos">
+                    <p>HTML 5 | Javascript</p>
+                    <p>Permite definir cantidad de lineas que formaran el dibujo.</p>
+                </div>
             </article>
         </section>
-        <br>
+        <!-- <br>
         <section class="contacto"><a name='contacto'></a>
             <div class="row ">
                 <div class="col-md-6 ">
@@ -174,7 +195,7 @@
                    <div class="d-grid ">
                       <button class="btn btn-primary " type="button ">Enviar</button>
                    </div>
-        </section>
+        </section> -->
     <br>
     <!--<footer class="footer">
         <div>
@@ -198,8 +219,8 @@
             </li>
         </div>-->
         <footer>
-            <div class="content">
-              <div class="left box">
+            <!-- <div class="bg-light text-center text-lg-start">
+              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                 <div class="topic">Menú</div>
                 <div>
                     <li>
@@ -209,7 +230,7 @@
                         <ul><a href="#contacto">Contacto</a></ul>
                     </li>
               </div>
-              <div class="right box">
+              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                 <div class="topic">Contacto</div>
                     <div class="media-icons">
                         <li>
@@ -220,7 +241,7 @@
                         </li>
                     </div>
               </div>
-            </div>
+            </div> -->
             <div class="bottom">
               <p>Página creada por C. Ornella Meneghini</p>
             </div>

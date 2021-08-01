@@ -23,9 +23,6 @@ h1{
     text-align: center;
     text-decoration:wavy;
     color: black;
-    background: #FEAC5E;
-    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
-    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
 }
 h2{
     text-transform: uppercase;
@@ -83,18 +80,24 @@ footer > a{
     overflow: hidden;
     white-space: nowrap;
     border-right: 4px solid #1de2d1;
-    animation: typing 5s steps(15) infinite;
+    animation: typeJob 7s steps(15) infinite;
   }
-  @keyframes typing{
+  @keyframes typeJob{
     0%{
       width: 0ch;
     }
     50%{
-      width: 15ch;
+      width: 29ch;
     }
     100%{
       width: 0ch;
     }
+  }
+  .text-content .job .one{
+    color: #8a16e9;
+  }
+  .text-content .job .two{
+    color: #09d6c5;
   }
 
 /* Progress Bar */
@@ -142,23 +145,23 @@ progress[value]::-moz-progress-bar {
 }
 
 /* Skills */
-fa-li .red{
-    color: rgb(202, 9, 9);
+.red{
+    color: rgb(161, 0, 0);
 }
-fa-li .orange{
-    color: rgb(255, 157, 0);
+.yellow{
+    color: #cfbd1b;
 }
-fa-li .blue{
-    color: rgb(0, 91, 209);
+.orange{
+    color: #bd3e1f;
 }
-fa-li .green{
-    color: rgb(35, 160, 23);
+.green{
+    color:#086130;
 }
-fa-li .purple{
-    color: rgb(111, 48, 175);
+.blue{
+    color: #093f95;
 }
-fa-li .yellow{
-    color: rgb(255, 239, 19);
+.purple{
+    color: #7032cc;
 }
 
 /* Modo Oscuro */
@@ -174,6 +177,24 @@ fa-li .yellow{
 }
 .oscuro p{
     color: #ffffff;
+}
+.oscuro .red{
+    color: rgb(200, 0, 0);
+}
+.oscuro .yellow{
+    color: #EAD41C;
+}
+.oscuro .orange{
+    color: #D84924;
+}
+.oscuro .green{
+    color:#1E6D41;
+}
+.oscuro .blue{
+    color: #2071F2;
+}
+.oscuro .purple{
+    color: #7952B3;
 }
 
 /* Responsive Design */
@@ -203,5 +224,15 @@ fa-li .yellow{
     .programación{
         grid-template-columns: auto auto auto auto;
         padding: 0.1em 0 0.1em;
+    }
+    .Proyecto1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .uno{
+        grid-column: 1/2;
+    }
+    .dos{
+        grid-column: 2/2;
     }
 }
