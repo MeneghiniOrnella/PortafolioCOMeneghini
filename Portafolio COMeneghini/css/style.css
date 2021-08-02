@@ -75,11 +75,17 @@ footer > a{
 }
 
 /* Inicio */
+.text-content{
+    font-size: 3rem;
+    margin: 1rem 40% 1rem 20%;
+}
+.inicio{
+    background-color: #eeb4a5;
+}
 .text-content .typing-text{
-    margin-left: 10px;
     overflow: hidden;
     white-space: nowrap;
-    border-right: 4px solid #1de2d1;
+    border-right: 0.6rem solid #1de2d1;
     animation: typeJob 7s steps(15) infinite;
   }
   @keyframes typeJob{
