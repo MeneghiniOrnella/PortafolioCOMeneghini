@@ -222,7 +222,7 @@ progress[value]::-moz-progress-bar {
     text-align: center;
     text-justify: distribute-all-lines;
 }
-.Contacto p > a, .Contacto p{
+.Contacto p a, .Contacto p{
     justify-content: center;
     align-items: center;
     justify-items: center;
