@@ -211,6 +211,23 @@ progress[value]::-moz-progress-bar {
     z-index: 0;
 }
 
+.Contacto{
+    text-align: center;
+    text-justify: distribute-all-lines;
+}
+.Contacto p > a, .Contacto p{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-transform: none;
+    text-decoration: none;
+    font-size: 1.5em;
+    color:#010252;
+}
+.Contacto a:hover{
+    color:rgb(54, 48, 104);
+}
+
 /* Responsive Design */
 @media only screen and (max-width: 600px) {
     body{
