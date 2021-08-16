@@ -11,6 +11,11 @@ body{
 }
 
 /* Texto */
+h1{
+    text-align: center;
+    text-decoration:wavy;
+    color: black;
+}
 h2,h3{
     margin-left: 2em;
     padding: 0;
@@ -18,11 +23,6 @@ h2,h3{
     text-decoration: solid;
     text-align: center;
     color: rgb(8, 36, 128);
-}
-h1{
-    text-align: center;
-    text-decoration:wavy;
-    color: black;
 }
 h2{
     text-transform: uppercase;
@@ -203,6 +203,14 @@ progress[value]::-moz-progress-bar {
     color: #7952B3;
 }
 
+.background {
+    position:absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
 /* Responsive Design */
 @media only screen and (max-width: 600px) {
     body{
@@ -224,6 +232,16 @@ progress[value]::-moz-progress-bar {
         width: 100%;
         grid-template-columns: auto auto auto;
         padding: 0.05em 0 0.05em;
+    }
+    .Proyecto1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .uno{
+        grid-column: 1/2;
+    }
+    .dos{
+        grid-column: 2/2;
     }
 }
 @media only screen and (min-width: 801px) {

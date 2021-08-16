@@ -38,31 +38,15 @@
             <span class="navbar-text">
               <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <p type="button" class="switchTheme" onclick="cambiarModo()"> <i class="fas fa-adjust"></i> </p>
+                    <p type="button" class="switchTheme" onclick="cambiarModo()"><i class="fas fa-adjust"></i></p>
                 </li>
-                <!-- <li class="nav-item">
-                    <a href="indexEN.html"><img src="img\united-kingdom.svg" width="35"></a>
+                <li  class="nav-item">
+                    <p>
+                    <a class="dropdown-item" href="indexEN.html"><img src="img\uk.svg" width="25"></a></p>
                 </li>
-                <li class="nav-item">
-                    <a </a>
+                <li  class="nav-item"><p>
+                    <a class="dropdown-item" href="indexBR.html"><img src="img\brazil.svg" width="25"></a></p>
                 </li>
-                <li class="nav-item">
-                    
-                </li>
-              </ul> -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="index.html"><img src="img\argentina.svg" width="35">
-                        <a class="dropdown-item" href="indexBR.html"><img src="img\brazil.svg" width="35"></a>
-                    </div>
-                </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
             </ul>
             </span>
           </div>
@@ -70,6 +54,7 @@
     </nav>
     <div class="inicio"><a name='inicio'></a>
         <div class="text-content">
+            <!-- <img src="img\cool-background.png"> -->
             <div class="text">Hola, Mi nombre es</div>
             <div class="name">C. Ornella Meneghini</div>
             <div class="job">
@@ -87,8 +72,9 @@
     </div> -->
         <section class="cv"><a name='cv'></a>
             <h2>Curriculum</h2>
-            <article class="experiencia">
-                <h3>Experiencia Laboral</h3>
+            <article class="container">
+            <div class="row">
+            <div class="col"><h3>Experiencia Laboral</h3>
                 <li>
                     <ol><b>Trabajos técnicos a Pedido Voluntariado</b><br>2019 – Actualidad<br>
                         <li>
@@ -102,15 +88,16 @@
                         </li>
                     </ol>
                 </li>
-            </article>
-            <h3>Educación</h3>
-            <article class="educación">
+            </div>
+            <div class="col"><h3>Educación</h3>
                 <li>
                     <ol><b>Licenciatura en Comercio Internacional</b><br>2020 - Actualidad	| Universidad de la Marina Mercante | 2 materias restantes</ol>
                     <ol><b>Técnica en Comercio Internacional</b><br>2017 - 2019 | Fundación ICBC</ol>
                     <ol><b>Bachiller con Orientación en Administración y Gestión de Empresas</b><br>2013 - 2015 | Instituto Formar Futuro</ol>
                 </li>
-            </article>
+            </div>
+            </div>
+        </article>
             <h3>Habilidades</h3>
             <article >
                 <li class="programación">
@@ -175,75 +162,7 @@
                 </div>
             </article>
         </section>
-        <!-- <br>
-        <section class="contacto"><a name='contacto'></a>
-            <div class="row ">
-                <div class="col-md-6 ">
-                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.4436693791!2d-58.503337976920236!3d-34.615662458917484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1625021353787!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div class="col-md-6 mt-3 mt-md-0 ">
-                   <div class="mb-3 ">
-                      <label for="exampleFormControlInput1 " class="form-label ">Nombre</label>
-                      <input type="text " class="form-control " id="exampleFormControlInput1 " placeholder="Nombre">
-                   </div>
-                   <div class="mb-3 ">
-                      <label for="exampleFormControlInput1 " class="form-label ">Correo electronico</label>
-                      <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder="nombre@mail.com ">
-                   </div>
-                   <div class="mb-3 ">
-                      <label for="exampleFormControlTextarea1 " class="form-label ">comentario</label>
-                      <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 "></textarea>
-                   </div>
-                   <div class="d-grid ">
-                      <button class="btn btn-primary " type="button ">Enviar</button>
-                   </div>
-        </section> -->
-    <br>
-    <!--<footer class="footer">
-        <div>
-            <h4></h4>
-        </div>
-        <div>
-            <li>
-                <ul><a href="#inicio">Inicio</a></ul>
-                <ul><a href="#cv">Curriculum</a></ul>
-                <ul><a href="#proyectos">Proyectos</a></ul>
-                <ul><a href="#contacto">Contacto</a></ul>
-            </li>
-        </div>
-        <div>
-            <h4>Contacto</h4>
-            <li>
-                <ul class="footerIcon"><a href="mailto:meneghini.ornella@gmail.com"><i class="fas fa-envelope"></i></a></ul>
-                <ul class="footerIcon"><a href="https://www.linkedin.com/in/ornella-meneghini/"><i class="fab fa-linkedin"></i></a></ul>
-                <ul class="footerIcon"><a href="tel:+54 1123259370"><i class="fab fa-whatsapp"></i></a></ul>
-                <ul class="footerIcon"><a href="https://t.me/orne96"><i class="fab fa-telegram"></i></a></ul>
-            </li>
-        </div>-->
         <footer>
-            <!-- <div class="bg-light text-center text-lg-start">
-              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                <div class="topic">Menú</div>
-                <div>
-                    <li>
-                        <ul><a href="#inicio">Inicio</a></ul>
-                        <ul><a href="#cv">Curriculum</a></ul>
-                        <ul><a href="#proyectos">Proyectos</a></ul>
-                        <ul><a href="#contacto">Contacto</a></ul>
-                    </li>
-              </div>
-              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                <div class="topic">Contacto</div>
-                    <div class="media-icons">
-                        <li>
-                            <ul class="footerIcon"><a href="mailto:meneghini.ornella@gmail.com"><i class="fas fa-envelope"></i></a></ul>
-                            <ul class="footerIcon"><a href="https://www.linkedin.com/in/ornella-meneghini/"><i class="fab fa-linkedin"></i></a></ul>
-                            <ul class="footerIcon"><a href="tel:+54 1123259370"><i class="fab fa-whatsapp"></i></a></ul>
-                            <ul class="footerIcon"><a href="https://t.me/orne96"><i class="fab fa-telegram"></i></a></ul>
-                        </li>
-                    </div>
-              </div>
-            </div> -->
             <div class="bottom">
               <p>Página creada por C. Ornella Meneghini</p>
             </div>
@@ -251,7 +170,10 @@
     <!--<a href='https://www.freepik.es/vectores/trabajo'>Vector de Trabajo creado por stories - www.freepik.es</a>-->
     <!-- JS -->
     <script src="js/index.js"></script>    
-    <!-- Bootstrap --> 
+    <script src="path/to/particles.min.js"></script> 
+    
+<canvas class="background"></canvas>
+<script src="path/to/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
