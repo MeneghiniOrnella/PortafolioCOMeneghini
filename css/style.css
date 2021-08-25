@@ -1,0 +1,286 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(248, 248, 248);
+}
+
+/* Texto */
+h1{
+    text-align: center;
+    text-decoration:wavy;
+    color: black;
+}
+h2,h3{
+    margin-left: 2em;
+    padding: 0;
+    display: flex;
+    text-decoration: solid;
+    text-align: center;
+    color: rgb(8, 36, 128);
+}
+h2{
+    text-transform: uppercase;
+}
+p{
+    text-align: justify;
+    margin: 2rem;
+}
+a:link, a:visited, a:active, a:hover {
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+
+/* Secciones */
+section{
+    background-color: rgb(255, 255, 255);
+}
+footer, footer a{
+    display: flex;
+    text-decoration: none;
+    overflow: hidden;
+    color: black;
+    background-color: rgb(143, 210, 255);
+    margin:0;
+    padding: 0;
+}
+footer a:hover{
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 0%;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(130, 189, 238);
+    color: rgb(22, 32, 63);
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:first baseline;
+}
+footer a{
+    padding: 0.2rem;
+    border-radius: 8%;
+}
+footer > a{
+    padding: 0.6rem;
+    border-radius:100%;
+}
+
+/* Inicio */
+.inicio{
+    background-image: url("../img/cool-background.png");
+}
+.text-content{
+    font-size: 3rem;
+    text-align: center;
+}
+.inicio{
+    background-color: #eeb4a5;
+}
+.text-content .typing-text{
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.6rem solid #1de2d1;
+    animation: typeJob 15s steps(25) infinite;
+  }
+.typing-text span{
+    align-items: center;
+}
+  @keyframes typeJob{
+    0%{
+      width: 0ch;
+    }
+    50%{
+      width: 38ch;
+    }
+    100%{
+      width: 0ch;
+    }
+  }
+  .text-content .job .one, .text-content .job .two {
+    color: #8a16e9;
+  }
+.job{
+    text-align: center;
+}
+
+/* Progress Bar */
+progress{
+    background-color: rgb(209, 208, 208);
+}
+progress[value] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: none;
+}
+progress[value]::-moz-progress-bar { 
+    background-image:
+/*      -moz-linear-gradient(
+        135deg, 
+        transparent 33%, 
+        rgba(0, 0, 0, 0.1) 33%, 
+        rgba(0, 0, 0, 0.1) 66%, 
+        transparent 66% 
+      ),*/
+      -moz-linear-gradient(
+        top, 
+        #22c1c3, 
+        #010252
+      ),
+      -moz-linear-gradient(
+        left, 
+        #22c1c3, 
+        #010252
+      );
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%; 
+}
+
+.programación{
+    display: grid;
+    text-align: center;
+    width: 100%;
+}
+
+.programación img, .Proyecto1 img{
+    width: 40%;
+    height:40%;
+}
+
+/* Skills */
+.red{
+    color: rgb(161, 0, 0);
+}
+.yellow{
+    color: #cfbd1b;
+}
+.orange{
+    color: #bd3e1f;
+}
+.green{
+    color:#086130;
+}
+.blue{
+    color: #093f95;
+}
+.purple{
+    color: #7032cc;
+}
+
+/* Modo Oscuro */
+.oscuro{ 
+    background-color: #1a2c4e; 
+    color: #f3f0f0; 
+}
+.oscuro section{
+    background-color: rgb(58, 69, 92);
+}
+.oscuro h2, .oscuro h3, .oscuro h4{
+    color: #31bfc9;
+}
+.oscuro p{
+    color: #ffffff;
+}
+.oscuro .red{
+    color: rgb(200, 0, 0);
+}
+.oscuro .yellow{
+    color: #EAD41C;
+}
+.oscuro .orange{
+    color: #D84924;
+}
+.oscuro .green{
+    color:#1E6D41;
+}
+.oscuro .blue{
+    color: #2071F2;
+}
+.oscuro .purple{
+    color: #7952B3;
+}
+
+.background {
+    position:absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.Contacto{
+    text-align: center;
+    text-justify: distribute-all-lines;
+}
+.Contacto p a, .Contacto p{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-transform: none;
+    text-decoration: none;
+    font-size: 1.5em;
+    color:#010252;
+}
+.Contacto a:hover{
+    color:rgb(54, 48, 104);
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    body{
+        text-align: center;
+        align-content: center;
+    }
+    .programación{
+        grid-template-columns: auto;
+    }   
+}
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+    body{
+        text-align: center;
+        align-content: center;
+    }
+    .programación{
+        display: grid;
+        text-align: center;
+        width: 100%;
+        grid-template-columns: auto auto auto;
+        padding: 0.05em 0 0.05em;
+    }
+    .Proyecto1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .uno{
+        grid-column: 1/2;
+    }
+    .dos{
+        grid-column: 2/2;
+    }
+}
+@media only screen and (min-width: 801px) {
+    .programación{
+        grid-template-columns: auto auto auto auto;
+        padding: 0.1em 0 0.1em;
+    }
+    .Proyecto1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .uno{
+        grid-column: 1/2;
+    }
+    .dos{
+        grid-column: 2/2;
+    }
+}
