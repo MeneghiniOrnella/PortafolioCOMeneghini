@@ -92,7 +92,7 @@ footer > a{
     border-right: 0.6rem solid #1de2d1;
     animation: typeJob 15s steps(25) infinite;
   }
-.typing-text span{
+.typing-text span, .typing-text, .job{
     align-items: center;
 }
   @keyframes typeJob{
