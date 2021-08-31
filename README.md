@@ -7,5 +7,5 @@
 - Contacto
 ## Motivo
 Difundir mi cv web.
-## Autroa
+## Autora
 C. Ornella Meneghini.
