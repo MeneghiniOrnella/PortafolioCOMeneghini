@@ -1,7 +1,7 @@
 # Portafolio de C. Ornella Meneghini
 ## Contenido
 - Experiencia Laboral
-- Eduación
+- Educación
 - Habilidades
 - Proyectos
 - Contacto
