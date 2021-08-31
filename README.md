@@ -1,4 +1,4 @@
-# Portafolio de C. Oornella Meneghini
+# Portafolio de C. Ornella Meneghini
 ## Contenido
 - Experiencia Laboral
 - Eduación
