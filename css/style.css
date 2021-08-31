@@ -76,14 +76,13 @@ footer > a{
 
 /* Inicio */
 .inicio{
+    background-color: #eeb4a5;
     background-image: url("../img/cool-background.png");
+    padding: 20rem;
 }
 .text-content{
     font-size: 3rem;
     text-align: center;
-}
-.inicio{
-    background-color: #eeb4a5;
 }
 .text-content .typing-text{
     text-align: center;
