@@ -128,15 +128,15 @@ footer > a{
     background: rgb(32, 100, 139);
     background: linear-gradient(90deg, rgba(41,76,96,1) 0%, rgba(12,119,182,1) 100%);
     border: none;
-    padding: 0.1em 1em;
+    padding: 0.4em 1.4em;
     margin: 0 2em;
+    border-radius: 0.5em;
 }
 .visitar-sitio:hover, .visitar-sitio:link, .visitar-sitio:visited, .visitar-sitio:active{
     background: rgb(12,119,182);
     background: linear-gradient(90deg, rgba(12,119,182,1) 0%, rgba(41,76,96,1) 100%);
     border: none;
-    padding: 0.1em 1em;
-    margin: 0 2em;
+    
 }
 .visitar-sitio  a {
     text-decoration: none;
