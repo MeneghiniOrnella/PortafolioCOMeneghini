@@ -6,6 +6,16 @@
     text-decoration: none;
     color: black;
 }
+::-webkit-scrollbar{
+    width: 1.2em;
+}
+::-webkit-scrollbar-track{
+    background: rgb(224, 224, 224);
+}
+::-webkit-scrollbar-thumb{
+    background: #334275;
+    border-radius: 5px;
+}
 body{
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -36,7 +46,6 @@ p{
 a:link, a:visited, a:active, a:hover {
     text-decoration:none;
 }
-
 
 /* Secciones */
 section{
@@ -110,6 +119,28 @@ footer > a{
   }
 .job{
     text-align: center;
+}
+
+.hashtags{
+    color:#0d2a5f;
+}
+.visitar-sitio{
+    background: rgb(32, 100, 139);
+    background: linear-gradient(90deg, rgba(41,76,96,1) 0%, rgba(12,119,182,1) 100%);
+    border: none;
+    padding: 0.1em 1em;
+    margin: 0 2em;
+}
+.visitar-sitio:hover, .visitar-sitio:link, .visitar-sitio:visited, .visitar-sitio:active{
+    background: rgb(12,119,182);
+    background: linear-gradient(90deg, rgba(12,119,182,1) 0%, rgba(41,76,96,1) 100%);
+    border: none;
+    padding: 0.1em 1em;
+    margin: 0 2em;
+}
+.visitar-sitio  a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 /* Progress Bar */
@@ -264,9 +295,28 @@ ol{
     }   
 }
 @media only screen and (min-width: 601px) and (max-width: 800px) {
-    body{
+    /* body{
         text-align: center;
         align-content: center;
+    } */
+    .logo{
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0 40px;
+        line-height: 80px;
+        background-color: #1a2c4e;
+        color: white;
+    }
+    .nav{
+        display: flex;
+        margin-right: 40px;
+        margin: 0 auto;
+    }
+    .navLink{
+        font-size: 18px;
+        margin: 0 10px;
+        line-height: 80px;
+        width: max-content;
     }
     .programación{
         display: grid;
@@ -290,6 +340,29 @@ ol{
     } */
 }
 @media only screen and (min-width: 801px) {
+    .logo{
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0 40px;
+        line-height: 80px;
+        background-color: #1a2c4e;
+        color: white;
+    }
+    .nav{
+        display: flex;
+        margin-right: 40px;
+        margin: 0 auto;
+    }
+    .navLink{
+        font-size: 18px;
+        margin: 0 10px;
+        line-height: 80px;
+        width: max-content;
+    }
+    .navLink:hover{
+        color: rgb(160, 37, 37);
+        transition: 6s;
+    }
     .programación{
         grid-template-columns: auto auto auto auto;
         padding: 0.1em 0 0.1em;
@@ -297,7 +370,6 @@ ol{
     .Proyecto1{
         display: inline-block;
     }
-    
     .fa-file,.fa-briefcase,.fa-envelope{
         display: none;
     }
@@ -314,27 +386,5 @@ ol{
 }
 
 /* Nuevo inicio */
-.logo{
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0 40px;
-    line-height: 80px;
-    background-color: #1a2c4e;
-    color: white;
-}
-.nav{
-    display: flex;
-    margin-right: 40px;
-    margin: 0 auto;
-}
-.navLink{
-    font-size: 18px;
-    margin: 0 10px;
-    line-height: 80px;
-    width: max-content;
-}
-.navLink:hover{
-    color: rgb(160, 37, 37);
-    transition: 6s;
-}
+
 
